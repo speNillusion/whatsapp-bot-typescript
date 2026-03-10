@@ -1,0 +1,53 @@
+# Dependências
+node_modules/
+package-lock.json
+yarn.lock
+session
+normal
+business
+# Arquivos de build
+dist/
+build/
+*.tsbuildinfo
+
+# Arquivos de ambiente
+.env.local
+.env
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDE e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+contatos.txt
+
+# Arquivos de teste
+coverage/
+
+# Arquivos temporários
+tmp/
+temp/
+
+# Arquivos de credenciais do WhatsApp
+auth_info/
+auth_info_multi/
+*.auth.json
+
+# Outros
+.cache/
+.temp/
+*.pem
