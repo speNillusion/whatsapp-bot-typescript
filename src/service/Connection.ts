@@ -45,7 +45,11 @@ export class Connection {
         auth: state,
         emitOwnEvents: true,
         markOnlineOnConnect: true,
-        generateHighQualityLinkPreview: true,
+        keepAliveIntervalMs: 30000,
+        connectTimeoutMs: 20000, // 20 segundos para conectar
+        defaultQueryTimeoutMs: 60000, // 60 segundos para queries
+        retryRequestDelayMs: 1000, // Delay entre retentativas
+        maxMsgRetryCount: 4, // Máximo de retentativas de mensagem
       });
 
       if (!client.authState.creds.registered) {
